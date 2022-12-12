@@ -23,4 +23,16 @@ const backpack = {
     this.strapLength.left = lengthLeft;
     this.strapLength.right = lengthRight;
   },
+  nameChanger: function(name){
+    this.name = name;
+    console.log("New name is: ", this.name);
+  },
+  volumeChanger: function(volume){
+    this.volume = volume;
+    console.log("New volume is: ", this.volume);
+  },
+  paintBackpack: function(color){
+    this.color = color;
+    console.log("New color is: ", this.color);
+  },
 };
