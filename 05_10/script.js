@@ -60,3 +60,22 @@ newArticle.setAttribute("id", "everyday");
 newArticle.innerHTML = content;
 
 main.append(newArticle);
+
+
+const navbar = `
+<ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Mission</a></li>
+      <li><a href="#">Accomplishments</a></li>
+      <li><a href="#">Contacts</a></li>
+</ul>
+      `;
+
+
+const newNavbar = document.createElement("div");
+newNavbar.classList.add("my-navbar");
+newNavbar.innerHTML = navbar;
+
+const header = document.querySelector(".siteheader");
+header.append(newNavbar);
