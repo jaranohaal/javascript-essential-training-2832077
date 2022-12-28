@@ -44,7 +44,7 @@ function advancedFunction(array){
 
   const newArticle = document.createElement("article");
   newArticle.classList.add("backpack");
-  newArticle.setAttribute("id", "everyday");
+  newArticle.setAttribute("id", element.id);
   newArticle.innerHTML = content;
 
   main.append(newArticle);
