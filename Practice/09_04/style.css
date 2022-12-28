@@ -22,3 +22,15 @@ body {
   height: 6rem;
   background-color: hsl(0, 0%, 90%);
 }
+
+.blue{
+  background-color: blue;
+}
+
+.hover_blue{
+  background-color: aqua;
+}
+
+.lightgrey{
+  background-color: lightgrey;
+}
