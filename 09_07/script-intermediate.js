@@ -52,11 +52,24 @@ const newStrapLength = (strapArray) => {
       <input type="number" name="${side}Length" placeholder="New ${side} length">
       <button>Update</button>
     `;
+    
+
+    lengthForm.addEventListener("submit", event=>{
+      let input = lengthForm.querySelector("input").value;
+      event.preventDefault();
+
+      listElement.querySelector("span").innerHTML = `${input} inches`;
+      
+    });
 
     // Add form to the end of the list element
     listElement.append(lengthForm);
+
+    
   });
 };
+
+
 
 const backpackList = backpackObjectArray.map((backpack) => {
   let backpackArticle = document.createElement("article");
